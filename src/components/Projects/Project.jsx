@@ -1,0 +1,37 @@
+import React, { useState } from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
+import { FiGithub } from "react-icons/fi";
+import { MdScreenSearchDesktop } from "react-icons/md";
+function Project(props) {
+  let [bottomDetails, setbottomDetails] = useState(-100);
+  let [bottomArrow, setbottomArrow] = useState(10);
+  function displayDetails() {
+    setbottomArrow(-100);
+    setbottomDetails(10);
+    setTimeout(() => {
+      setbottomDetails(-100);
+      setbottomArrow(5);
+    }, 4000);
+  }
+  return (
+    <div className="project">
+      <h3>{props.Name}</h3>
+      <p>{props.Decription}</p>
+      <AiOutlineArrowUp
+        className="arrow"
+        onClick={displayDetails}
+        style={{ bottom: bottomArrow }}
+      />
+      <div className="details" style={{ bottom: `${bottomDetails}%` }}>
+        <a href={props.githubLink}>
+          <FiGithub className="detail" />
+        </a>
+        <a href="">
+          <MdScreenSearchDesktop className="detail" />
+        </a>
+      </div>
+    </div>
+  );
+}
+
+export default Project;
