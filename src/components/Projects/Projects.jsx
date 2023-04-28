@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 import { MdScreenSearchDesktop } from "react-icons/md";
 import Title from "../Title";
 import Project from "./Project";
+
 function Projects() {
   return (
     <div className="Projects">
       <Title title="My Projects" />
+     
       <div className="container">
         <Project
           Name="Donation Site"

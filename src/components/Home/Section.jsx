@@ -1,8 +1,8 @@
 import React from "react";
 import img from "./images/IMG_20230219_185029_391-removebg-preview.png";
 import { FaLinkedinIn } from "react-icons/fa";
-import { BsGithub } from "react-icons/bs";
-import { HiMail } from "react-icons/hi";
+import { FiGithub } from "react-icons/fi";
+import { AiFillInstagram } from "react-icons/ai";
 function Section() {
   return (
     <div className="section">
@@ -80,14 +80,14 @@ function Section() {
           <p>TO MY PORTFOLIO</p>
         </div>
         <div className="social">
-          <a href="">
+          <a href="" >
             <FaLinkedinIn className="icon" />
           </a>
           <a href="">
-            <HiMail className="icon" />
+            <AiFillInstagram className="icon" />
           </a>
           <a href="">
-            <BsGithub className="icon" />
+            <FiGithub className="icon" />
           </a>
         </div>
       </div>

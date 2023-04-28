@@ -1,24 +1,41 @@
 :root {
+  /* blue 
+#11476d
+#b9e0ed
+*/
+  /* --main-color: #00e284; */
   --main-color: rgba(36, 255, 0, 0.47);
   --transparent-color: rgb(15 116 143 / 70%);
+  /* --main-color: #b9e0ed; */
   --p-color: #a8a8a8;
   --title-color: #1f2021;
-  --second-color: black;
+  /* --second-color: black; */
+  --second-color: #004338;
+  /* --second-color: #00e284; */
   --animation-duration: 0.3s;
   --main-padding: 100px;
 }
 
 /* */
 
+/* .Projects
+
+.education
+
+.domains
+
+.home 
+.skills */
 .bub {
   position: absolute;
   overflow: hidden;
   height: 100%;
   width: 100%;
+  z-index: -1;
 }
 
 .bubbles {
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   display: flex;
 }
@@ -28,9 +45,10 @@
   height: 30px;
   background-color: var(--main-color);
   margin: 0 4px;
+  opacity: 0.5;
   border-radius: 50%;
   animation: animate 15s linear infinite;
-  animation-duration: calc(200s / var(--i));
+  animation-duration: calc(250s / var(--i));
 }
 
 @keyframes animate {
@@ -164,13 +182,13 @@ a {
 }
 
 .nav .links.phone {
-  z-index: 1;
+  z-index: 10;
 
   display: none;
   flex-direction: column;
   top: 100%;
   left: 0;
-  background-color: transparent;
+  background-color: var(--second-color);
   position: absolute;
   width: 100%;
 }
@@ -226,8 +244,8 @@ a {
   height: 100%;
   width: 25%;
   z-index: -1;
-  background-color: black;
-  border-radius: 0 20px 20px 0;
+  background-color: var(--main-color);
+  /* border-radius: 0 20px 20px 0; */
 }
 
 .section .my-img {
@@ -252,7 +270,7 @@ a {
 /*info */
 
 .section .line {
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   height: 2px;
   position: relative;
   animation: animateLine linear var(--animation-duration) forwards;
@@ -274,6 +292,7 @@ a {
   padding: 40px 20px;
   width: 80%;
   text-align: center;
+  line-height: 1.7;
 }
 
 .section .myInfo .text span {
@@ -312,7 +331,7 @@ a {
   top: 50%;
   left: 0;
   transform: translate(-100%, -50%);
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   align-self: flex-end;
   animation: animateCircle linear forwards var(--animation-duration);
   animation-delay: var(--animation-duration);
@@ -325,14 +344,16 @@ a {
   top: 50%;
   right: 0;
   transform: translate(100%, -50%);
-  background-color: var(--main-color);
+  background-color: var(--second-color);
   animation: animateCircle linear forwards var(--animation-duration);
   animation-delay: var(--animation-duration);
 }
 .section .line.left {
   align-self: flex-end;
 }
-
+.home {
+  margin-bottom: var(--main-padding);
+}
 @keyframes animateCircle {
   0% {
     width: 0;
@@ -361,6 +382,7 @@ a {
 .Links p {
   font-size: 24px;
   text-align: end;
+  margin-bottom: 10px;
 }
 
 .Links h2::after {
@@ -415,23 +437,37 @@ a {
   margin-top: 40px;
   margin-left: auto;
   border-bottom: 1px solid var(--second-color);
+  display: flex;
+  padding-bottom: 5px;
+}
+
+.social a {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--second-color);
+  margin-right: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  columns: var(--second-color);
+  transition: 0.2s;
+  overflow: hidden;
 }
 
 .social .icon {
-  font-size: 50px;
-  padding: 12px;
-
-  border-radius: 50%;
-  border: 1px solid var(--main-color);
-  color: black;
-  margin: 4px;
-  transition: 0.3s;
+  font-size: 30px;
+  color: var(--second-color);
+  transition: 0.2s;
 }
 
-.social .icon:hover {
+.social a:hover {
   background-color: var(--main-color);
-  color: white;
+
   transform: translateY(-5px);
+}
+.social a:hover .icon {
+  color: white;
 }
 .welcome {
   width: 75%;
@@ -442,10 +478,6 @@ a {
   }
   .Links h2 {
     font-size: 5em;
-  }
-
-  .social .icon {
-    font-size: 45px;
   }
 
   .section .info .myInfo .text {
@@ -470,6 +502,14 @@ a {
     left: 45%;
     margin-left: -150px;
   }
+
+  .section .social a {
+    width: 40px;
+    height: 40px;
+  }
+  .section .icon {
+    font-size: 25px;
+  }
   .section {
     padding: 20px 0;
   }
@@ -482,7 +522,7 @@ a {
   }
   .section .myInfo .text {
     width: 95%;
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
   .section .myInfo .text {
     justify-content: start;
@@ -525,14 +565,14 @@ a {
   padding: var(--main-padding) 0;
 }
 .mainTitle {
-  font-size: 25px;
+  font-size: 23px;
   font-weight: 500;
   text-transform: uppercase;
-  padding: 12px;
+  padding: 11px;
   border: 1px solid black;
   width: 190px;
   text-align: center;
-  margin: 0 auto 50px;
+  margin: 0 24px;
   position: relative;
   transition: 0.3s;
   border-radius: 25px;
@@ -548,7 +588,18 @@ a {
   right: -25px;
   transform: translateY(-50%);
 }
+.title {
+  margin-bottom: var(--main-padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.title .line {
+  width: 20%;
+  height: 2px;
+  background-color: green;
+}
 .mainTitle::before {
   content: "";
   position: absolute;
@@ -600,40 +651,47 @@ a {
     z-index: -1;
   }
 }
-
+.Projects {
+}
 .Projects .container {
-  height: 300px;
+  height: 450px;
   display: flex;
+  background-color: var(--main-color);
   flex-wrap: nowrap;
   overflow-x: auto;
   gap: 50px;
   width: 100%;
   align-items: center;
   perspective: 300px;
+  transition: 1s;
+  scroll-behavior: smooth;
 }
 
 .Projects .container .project {
-  width: 40%;
-  background-color: var(--main-color);
+  width: 30%;
+  /* background-color: var(--main-color); */
   flex-shrink: 0;
+  background-color: white;
   padding: 20px;
   text-align: center;
   position: relative;
-  height: 227px;
+  height: 300px;
   overflow: hidden;
   border-radius: 50px;
   margin-bottom: 30px;
   transition: 0.3s;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 .Projects .container .project:hover {
   transform: scale(1.1);
+  box-shadow: 0 15px 30px black;
 }
 .Projects .container .project p {
   margin-top: 15px;
 }
 @media (max-width: 768px) {
   .Projects .container .project {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -641,10 +699,12 @@ a {
   height: 6px;
   background-color: var(--secondary-color);
   border-radius: 15px;
+  scroll-behavior: smooth;
+  transition: 3s;
 }
 
 .Projects .container::-webkit-scrollbar-thumb {
-  background-color: var(--second-color);
+  background-color: black;
   border-radius: 4px;
 }
 
@@ -886,7 +946,8 @@ a {
 }
 
 .education .journey svg {
-  width: 100%;
+  width: 60%;
+  margin-top: 80px;
   margin-left: -3%;
 }
 .education .journey {
@@ -928,3 +989,186 @@ a {
     margin-left: -20%;
   }
 } */
+
+/* What I Do */
+
+.domains {
+  padding: var(--main-padding) 0;
+}
+.domains .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.options .domain {
+  display: flex;
+  height: 200px;
+
+  padding: 20px;
+
+  border: 2px solid var(--main-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+.domain .text {
+  text-align: center;
+}
+.domain h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.domain p {
+  color: #777;
+
+  line-height: 1.7;
+  font-size: 17px;
+}
+
+.image {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+}
+
+.options {
+  width: 50%;
+}
+
+.domain::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  border-radius: 10px;
+
+  background-color: var(--main-color);
+  height: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+.domain:hover::after {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--second-color);
+}
+@media (max-width: 992px) {
+  .domains .container {
+    flex-direction: column;
+  }
+  .image {
+    margin-bottom: 70px;
+  }
+  .options {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .domain {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .image {
+    width: 80%;
+  }
+}
+/* Skills */
+
+.skills {
+  padding: var(--main-padding) 0;
+}
+
+.skills .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills .languages {
+  width: 50%;
+}
+
+/* .skills .img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+.image img {
+  width: 100%;
+}
+.skills .language .rectangle {
+  height: 40px;
+  width: 100%;
+  background-color: #eee;
+  margin-bottom: 20px;
+  position: relative;
+}
+.skills .language .rectangle div {
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.skills .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.skills .info h3 {
+  font-weight: 500;
+}
+.skills .info span {
+  font-weight: 500;
+  background: var(--main-color);
+  padding: 7px 10px;
+  border-radius: 8px;
+
+}
+
+@media (max-width: 992px) {
+  .skills .container {
+    flex-direction: column-reverse;
+  }
+  .skills .languages {
+    width: 100%;
+  }
+
+  .skills .info span {
+    padding: 5px 8px;
+  }
+}
+@media (max-width: 992px) {
+  /* .skills .language{
+ height: ;
+ } */
+  .skills .language .rectangle {
+    height: 33px;
+  }
+  .skills .info {
+    margin-bottom: 10px;
+  }
+}
+.Projects .education,
+.domains,
+.skills {
+  padding: var(--main-padding) 0 0;
+}

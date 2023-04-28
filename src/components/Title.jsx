@@ -16,12 +16,18 @@ function Title(props) {
   console.log(window.innerHeight);
 
   return (
-    <div
-      className="mainTitle"
-      ref={title}
-      style={{ transform: display ? "translateY(0px)" : "translateY(150px) " }}
-    >
-      {props.title}
+    <div className="title">
+      <div className="line"></div>
+      <div
+        className="mainTitle"
+        ref={title}
+        style={{
+          transform: display ? "translateY(0px)" : "translateY(150px) ",
+        }}
+      >
+        {props.title}
+      </div>
+      <div className="line"></div>
     </div>
   );
 }
