@@ -8,6 +8,45 @@
   --main-padding: 100px;
 }
 
+/* */
+
+.bub {
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.bubbles {
+  z-index: -1;
+  position: absolute;
+  display: flex;
+}
+
+.bubbles span {
+  width: 30px;
+  height: 30px;
+  background-color: var(--main-color);
+  margin: 0 4px;
+  border-radius: 50%;
+  animation: animate 15s linear infinite;
+  animation-duration: calc(200s / var(--i));
+}
+
+@keyframes animate {
+  0% {
+    margin-top: 100%;
+    transform: scale(0);
+  }
+
+  100% {
+    margin-top: -10%;
+    transform: scale(1);
+  }
+}
+
+/**/
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -563,11 +602,14 @@ a {
 }
 
 .Projects .container {
+  height: 300px;
   display: flex;
   flex-wrap: nowrap;
-  overflow-y: auto;
+  overflow-x: auto;
   gap: 50px;
   width: 100%;
+  align-items: center;
+  perspective: 300px;
 }
 
 .Projects .container .project {
@@ -581,6 +623,10 @@ a {
   overflow: hidden;
   border-radius: 50px;
   margin-bottom: 30px;
+  transition: 0.3s;
+}
+.Projects .container .project:hover {
+  transform: scale(1.1);
 }
 .Projects .container .project p {
   margin-top: 15px;
@@ -882,4 +928,3 @@ a {
     margin-left: -20%;
   }
 } */
-

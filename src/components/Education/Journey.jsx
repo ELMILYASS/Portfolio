@@ -3,6 +3,7 @@ import React from "react";
 function Journey() {
   return (
     <div className="journey">
+     
       {/* <svg
         width="1759"
         height="600"
