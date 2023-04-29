@@ -20,14 +20,13 @@ function Title(props) {
       <div className="line"></div>
       <div
         className="mainTitle"
-        ref={title}
         style={{
           transform: display ? "translateY(0px)" : "translateY(150px) ",
         }}
       >
         {props.title}
       </div>
-      <div className="line"></div>
+      <div ref={title} className="line"></div>
     </div>
   );
 }

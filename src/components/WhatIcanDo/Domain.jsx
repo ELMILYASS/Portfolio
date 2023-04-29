@@ -4,8 +4,7 @@ function Domain(props) {
   return (
     <div className="domain">
       <div className="text">
-        {" "}
-        <h2>{props.domain}</h2>
+        <h3>{props.domain}</h3>
         <p>{props.details}</p>
       </div>
     </div>

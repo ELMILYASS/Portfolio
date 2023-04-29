@@ -6,8 +6,10 @@ function Education() {
   return (
     <div className="education">
       <Title title="Education" />
-      <Quote />
-      <Journey />
+      <div className="container">
+        <Quote />
+        <Journey />
+      </div>
     </div>
   );
 }

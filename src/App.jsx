@@ -4,6 +4,8 @@ import Projects from "./components/Projects/Projects";
 import Education from "./components/Education/Education";
 import Cando from "./components/WhatIcanDo/Cando";
 import Skills from "./components/Skills/Skills";
+import Footer from "./components/Footer/Footer";
+import Contact from "./components/Contact/Contact";
 function App() {
   return (
     <>
@@ -12,6 +14,8 @@ function App() {
       <Skills />
       <Projects />
       <Education />
+      <Contact />
+      <Footer />
     </>
   );
 }
