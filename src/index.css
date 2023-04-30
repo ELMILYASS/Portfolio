@@ -82,6 +82,9 @@ a {
     width: 1170px;
   }
 }
+#home {
+  min-height: 100vh;
+}
 
 /* Header */
 
@@ -594,11 +597,8 @@ a {
 @media (max-width: 768px) {
   .section .my-img {
     width: 300px;
-  }
-  .section .my-img {
-    width: 300px;
 
-    top: 48%;
+    top: 42%;
 
     left: 45%;
     margin-left: -150px;
@@ -1818,5 +1818,25 @@ textarea:hover {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@media (max-width: 576px) {
+  .section .my-img {
+    width: 200px;
+    left: 58%;
+    top: 45%;
+  }
+  .section .myInfo .text {
+    font-size: 22px;
+  }
+  .Links p {
+    font-size: 18px;
+  }
+  .Links h2 {
+    font-size: 3.5em;
+  }
+  .mainTitle {
+    font-size: 20px;
   }
 }

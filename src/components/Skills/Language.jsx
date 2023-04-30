@@ -17,7 +17,7 @@ function Language(props) {
             console.log(rev.current);
             setpercentage(rev.current);
           }
-        }, 20);
+        }, 10);
       } else {
         rev.current = 0;
         setpercentage(0);
