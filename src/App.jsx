@@ -9,7 +9,7 @@ import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 function App() {
   let [isDark, setisDark] = React.useState(true);
-  let [displayScroll, setdisplayScroll] = useState(false);
+  let [displayScroll, setdisplayScroll] = useState(true);
   useEffect(() => {
     window.addEventListener("scroll", () => {
       if (window.scrollY >= 2000) {
