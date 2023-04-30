@@ -1822,11 +1822,6 @@ textarea:hover {
 }
 
 @media (max-width: 576px) {
-  .section .my-img {
-    width: 200px;
-    left: 58%;
-    top: 45%;
-  }
   .section .myInfo .text {
     font-size: 22px;
   }
