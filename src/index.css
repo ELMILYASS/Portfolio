@@ -288,6 +288,7 @@ a {
 @media (max-width: 768px) {
   .section .scrolldown {
     align-self: flex-end;
+    margin-right: 25px;
   }
 }
 @keyframes arrow {
@@ -928,13 +929,13 @@ a {
   position: absolute;
   bottom: 5%;
   left: 50%;
+
   font-size: 28px;
   transform: translateX(-50%);
   cursor: pointer;
   animation: animateArrow linear infinite 2s;
   transition: 1s;
   color: var(--second-color);
-
 }
 
 .Projects.dark .project .arrow {
@@ -1771,7 +1772,7 @@ textarea:hover {
   width: 50px;
   height: 50px;
   border: 1px solid var(--second-color);
-
+  margin-right: 25px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1781,7 +1782,6 @@ textarea:hover {
 .goHome:hover {
   background-color: var(--main-color);
 }
-
 
 .goHome:hover .icon {
   transition: 0.3s;
