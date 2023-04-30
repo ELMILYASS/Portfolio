@@ -8,6 +8,8 @@ function Title(props) {
       let entry = entries[0];
       if (entry.boundingClientRect.top >= 0) {
         setdisplay(entry.isIntersecting);
+      } else {
+        setdisplay(true);
       }
     });
 
@@ -16,17 +18,19 @@ function Title(props) {
   console.log(window.innerHeight);
 
   return (
-    <div className="title">
+    <div id="title" className={props.isDark ? "title dark" : "title "}>
       <div className="line"></div>
       <div
+        ref={title}
         className="mainTitle"
         style={{
           transform: display ? "translateY(0px)" : "translateY(150px) ",
+          opacity: display ? 1 : 0,
         }}
       >
         {props.title}
       </div>
-      <div ref={title} className="line"></div>
+      <div className="line"></div>
     </div>
   );
 }

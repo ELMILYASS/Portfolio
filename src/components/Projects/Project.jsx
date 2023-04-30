@@ -33,7 +33,7 @@ function Project(props) {
         <a href={props.githubLink}>
           <FiGithub className="detail" />
         </a>
-        <a href="">
+        <a href={props.siteLink}>
           <MdScreenSearchDesktop className="detail" />
         </a>
       </div>

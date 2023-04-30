@@ -1,11 +1,15 @@
 import React from "react";
 import Title from "../Title";
 import Language from "./Language";
-import img from "./images/81e567e6215b7f2b7150dff3a76c68de.jpg";
-function Skills() {
+import img from "./images/undraw_feeling_proud_qne1-removebg-preview.png";
+function Skills(props) {
   return (
-    <div className="skills">
-      <Title title="Skills" />
+    <div
+      id="skills"
+      style={{ backgroundColor: props.isDark ? "var(--dark)" : "" }}
+      className={props.isDark ? "skills dark" : "skills "}
+    >
+      <Title title="Skills" isDark={props.isDark} />
       <div class="container">
         {" "}
         <div className="languages">
@@ -15,7 +19,7 @@ function Skills() {
           <Language name="JAVA" percentage={80} />
         </div>
         <div className="image ">
-          <img src={img} alt="" />
+          <img className="img" src={img} alt="" />
         </div>
       </div>
     </div>

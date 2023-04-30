@@ -1,11 +1,14 @@
 import React from "react";
 import img from "./Subtract.png";
 
-function Footer() {
+function Footer(props) {
   return (
-    <div className="footer">
+    <div
+      id="footer"
+      style={{ backgroundColor: props.isDark ? "var(--dark)" : "" }}
+      className={props.isDark ? "footer dark" : "footer "}
+    >
       <img src={img} alt="" />
-
     </div>
   );
 }

@@ -2,10 +2,14 @@ import React from "react";
 import img from "./images/IMG_20230219_185029_391-removebg-preview.png";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
-import { AiFillInstagram } from "react-icons/ai";
-function Section() {
+
+import { AiFillInstagram, AiOutlineArrowDown } from "react-icons/ai";
+function Section(props) {
+  function scrollDown() {
+    window.scrollTo(0, 600);
+  }
   return (
-    <div className="section">
+    <div className={props.isDark ? "section dark" : "section"}>
       <div className=" info myInfo">
         <div className="line left"></div>
         <span className="text">
@@ -80,17 +84,19 @@ function Section() {
           <p>TO MY PORTFOLIO</p>
         </div>
         <div className="social">
-          <a href="" >
+          <a href="https://www.linkedin.com/in/ilyass-el-mazidi">
             <FaLinkedinIn className="icon" />
           </a>
-          <a href="">
+          <a href="https://www.instagram.com/ilyass_elmazidi/?next=%2F">
             <AiFillInstagram className="icon" />
           </a>
-          <a href="">
+          <a href="https://www.github.com/ELMILYASS">
             <FiGithub className="icon" />
           </a>
         </div>
       </div>
+
+      <AiOutlineArrowDown className="scrolldown" onClick={scrollDown} />
     </div>
   );
 }
