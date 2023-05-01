@@ -46,7 +46,7 @@ function Projects(props) {
             Decription="Real-time web chat application using PHP, JavaScript, CSS, AJAX,
           MySQL."
             githubLink="https://github.com/ELMILYASS/chatApp"
-            siteLink="rapidchatapp.000webhostapp.com/"
+            siteLink="https://rapidchatapp.000webhostapp.com/"
           />
           <Project
             img={Assignment}

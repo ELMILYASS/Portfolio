@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ilyass-el-mazidi"
-  }
+    "default": "ilyasselmazidi",
+    "production": "ilyasselmazidi"
+  },
+  "targets": {},
+  "etags": {}
 }
