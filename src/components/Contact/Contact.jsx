@@ -1,7 +1,31 @@
-import React from "react";
-// import img from "./R.gif";
+import React, { useRef, useState } from "react";
+
 import Title from "../Title";
+import emailjs from "@emailjs/browser";
+
 function Contact(props) {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_1kptqo5",
+        "template_q5d8w26",
+        form.current,
+        "tyXwtwnu-0R4MlUAn"
+      )
+      .then(
+        (result) => {
+          form.current.message.value = "";
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div
       id="contact"
@@ -207,12 +231,12 @@ function Contact(props) {
         </div>
         <div class="form">
           <h2>Get in Touch</h2>
-          <form>
-            <input type="text" placeholder="Your Name" />
-            <input type="email" placeholder="Your Email" />
+          <form ref={form} onSubmit={sendEmail}>
+            <input type="text" name="user_name" placeholder="Your Name" />
+            <input type="email" name="user_email" placeholder="Your Email" />
 
-            <textarea placeholder="Type your message"></textarea>
-            <button>Send</button>
+            <textarea name="message" placeholder="Type your message"></textarea>
+            <button style={{ cursor: "pointer" }}>Send</button>
           </form>
         </div>
       </div>

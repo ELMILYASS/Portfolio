@@ -69,7 +69,7 @@ function Section(props) {
                 </filter>
               </defs>
             </svg>
-            Ilyass El-mazidi
+            Ilyass El-Mazidi
           </span>
           , a web developer
         </span>
@@ -81,7 +81,7 @@ function Section(props) {
       <div className="info Links">
         <div className="welcome">
           <h2>Welcome</h2>
-          <p>TO MY PORTFOLIO</p>
+          <p>To My Portfolio</p>
         </div>
         <div className="social">
           <a href="https://www.linkedin.com/in/ilyass-el-mazidi">

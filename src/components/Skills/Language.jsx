@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 
 function Language(props) {
   let [percentage, setpercentage] = useState(0);
-
   let div = useRef();
   let rev = useRef(0);
   useEffect(() => {
@@ -14,7 +13,7 @@ function Language(props) {
             clearInterval(timer);
           } else {
             rev.current++;
-            console.log(rev.current);
+           
             setpercentage(rev.current);
           }
         }, 10);

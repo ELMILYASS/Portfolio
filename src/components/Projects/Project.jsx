@@ -30,10 +30,10 @@ function Project(props) {
         style={{ bottom: bottomArrow }}
       />
       <div className="details" style={{ bottom: `${bottomDetails}%` }}>
-        <a href={props.githubLink}>
+        <a href={props.githubLink} target="_blank">
           <FiGithub className="detail" />
         </a>
-        <a href={props.siteLink}>
+        <a href={props.siteLink} target="_blank">
           <MdScreenSearchDesktop className="detail" />
         </a>
       </div>
