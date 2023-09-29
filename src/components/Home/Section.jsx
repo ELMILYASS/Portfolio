@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./images/IMG_20230219_185029_391-removebg-preview.png";
+import img from "./images/IMG_20230219_185029_391_auto_x2-removebg-preview.png";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
@@ -71,7 +71,7 @@ function Section(props) {
             </svg>
             Ilyass El-Mazidi
           </span>
-          , a web developer
+          , a Web Developer
         </span>
         <div className="line right"></div>
       </div>
@@ -84,13 +84,19 @@ function Section(props) {
           <p>To My Portfolio</p>
         </div>
         <div className="social">
-          <a href="https://www.linkedin.com/in/ilyass-el-mazidi">
+          <a
+            href="https://www.linkedin.com/in/ilyass-el-mazidi"
+            target="_blank"
+          >
             <FaLinkedinIn className="icon" />
           </a>
-          <a href="https://www.instagram.com/ilyass_elmazidi/?next=%2F">
+          <a
+            href="https://www.instagram.com/ilyass_elmazidi/?next=%2F"
+            target="_blank"
+          >
             <AiFillInstagram className="icon" />
           </a>
-          <a href="https://www.github.com/ELMILYASS">
+          <a href="https://www.github.com/ELMILYASS" target="_blank">
             <FiGithub className="icon" />
           </a>
         </div>

@@ -9,7 +9,7 @@ function Cando(props) {
       style={{ backgroundColor: props.isDark ? "var(--dark)" : "" }}
       className={props.isDark ? "domains dark" : "domains "}
     >
-      <Title title="What I Do ?" isDark={props.isDark}/>
+      <Title title="What I Do ?" isDark={props.isDark} />
 
       <div className="container">
         <div className="image">
@@ -311,7 +311,7 @@ function Cando(props) {
         <div className="options">
           <Domain
             domain="Web Development"
-            details="I am a very passionate web developer, for the front-end i use HTML,CSS,JavaScript or React and for the back-end i use PHP or SpringBoot"
+            details="I am a very passionate web developer, for the front-end I use HTML,CSS,JavaScript or React and for the back-end I use NodeJs, PHP or SpringBoot"
           />
           <Domain
             domain="Web Design"

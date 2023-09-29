@@ -9,6 +9,7 @@ function Header(props) {
   }
 
   function changeColor() {
+    localStorage.setItem("dark", !props.isDark);
     props.set((prev) => !prev);
   }
 

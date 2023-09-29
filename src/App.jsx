@@ -8,7 +8,10 @@ import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
 import Contact from "./components/Contact/Contact";
 function App() {
-  let [isDark, setisDark] = React.useState(false);
+  let [isDark, setisDark] = useState(false);
+  useEffect(() => {
+    setisDark(localStorage.getItem("dark") === "false" ? false : true);
+  }, []);
   let [displayScroll, setdisplayScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -44,5 +47,3 @@ function App() {
 }
 
 export default App;
-
-

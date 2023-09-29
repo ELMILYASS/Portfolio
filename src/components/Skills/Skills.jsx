@@ -16,7 +16,7 @@ function Skills(props) {
           <Language name="PHP" percentage={80} />
           <Language name="JavaScript-TypeScript" percentage={60} />
           <Language name="React" percentage={80} />
-          <Language name="CSS" percentage={70} />
+          <Language name="CSS-TailwindCss" percentage={70} />
           <Language name="JAVA" percentage={80} />
           <Language name="SpringBoot" percentage={70} />
         </div>

@@ -1,7 +1,9 @@
 {
   "projects": {
     "default": "ilyasselmazidi",
-    "production": "ilyasselmazidi"
+    "production": "ilyasselmazidi",
+    "build": "ilyasselmazidi",
+    "portfolio": "ilyasselmazidi"
   },
   "targets": {},
   "etags": {}
