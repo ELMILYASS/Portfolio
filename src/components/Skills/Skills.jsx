@@ -13,12 +13,12 @@ function Skills(props) {
       <div class="container">
         {" "}
         <div className="languages">
-          <Language name="PHP" percentage={80} />
-          <Language name="JavaScript-TypeScript" percentage={60} />
-          <Language name="React" percentage={80} />
+          <Language name="JavaScript-TypeScript-NodeJs" percentage={80} />
+          <Language name="ReactJs" percentage={80} />
           <Language name="CSS-TailwindCss" percentage={70} />
-          <Language name="JAVA" percentage={80} />
-          <Language name="SpringBoot" percentage={70} />
+          <Language name="JAVA-SpringBoot" percentage={70} />
+          <Language name="Python-Flask" percentage={70} />
+          <Language name="PHP" percentage={70} />
         </div>
         <div className="image ">
           <img className="img" src={img} alt="" />

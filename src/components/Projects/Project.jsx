@@ -22,7 +22,7 @@ function Project(props) {
 
       <div className="info">
         <h3>{props.Name}</h3>
-        <p>{props.Decription}</p>
+        <p>{props.Description}</p>
       </div>
       <AiOutlineArrowUp
         className="arrow"
