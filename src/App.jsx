@@ -22,11 +22,13 @@ function App() {
       }
     });
   }, []);
+
   return (
     <div
       style={{
         "--main-color": isDark ? "#141516" : "rgba(36, 255, 0, 0.47)",
         "--second-color": isDark ? "rgba(36, 255, 0, 0.47)" : "#004338",
+
         color: isDark ? "white" : "",
       }}
     >
