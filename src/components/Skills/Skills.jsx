@@ -14,7 +14,7 @@ function Skills(props) {
         {" "}
         <div className="languages">
           <Language name="JavaScript-TypeScript-NodeJs" percentage={80} />
-          <Language name="ReactJs" percentage={80} />
+          <Language name="ReactJs-Angular" percentage={80} />
           <Language name="CSS-TailwindCss" percentage={70} />
           <Language name="JAVA-SpringBoot" percentage={70} />
           <Language name="Python-Flask" percentage={70} />
