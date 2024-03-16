@@ -13,7 +13,7 @@ function Language(props) {
             clearInterval(timer);
           } else {
             rev.current++;
-           
+
             setpercentage(rev.current);
           }
         }, 10);
@@ -28,9 +28,13 @@ function Language(props) {
   return (
     <div className="language">
       <div className="info">
-        <h3>{props.name}</h3>
-        <span>{rev.current} %</span>
+        <h3>
+          {props.name} <span className="tools">({props.tools}) </span>{" "}
+        </h3>
+
+        <span className="percentage">{rev.current} %</span>
       </div>
+
       <div className="rectangle">
         <div ref={div} style={{ width: `${percentage}%` }}></div>
       </div>

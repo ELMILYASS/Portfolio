@@ -1,5 +1,5 @@
 import React from "react";
-import img from "./images/IMG_20230219_185029_391_auto_x2-removebg-preview.png";
+import img from "./images/portfolioImage.png";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
@@ -71,7 +71,7 @@ function Section(props) {
             </svg>
             Ilyass El-Mazidi
           </span>
-          , a Web Developer
+          , a Software Engineering Student
         </span>
         <div className="line right"></div>
       </div>

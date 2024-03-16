@@ -7,11 +7,13 @@ import Assignment from "./images/Assignment.PNG";
 import Template3 from "./images/Template3.PNG";
 import Template2 from "./images/Template2 .PNG";
 import SocialMedia from "./images/SocialMediaImage.PNG";
+import DigitalBanking from "./images/DB.png";
 import Template1 from "./images/Template1.PNG";
 import { MdScreenSearchDesktop } from "react-icons/md";
+import Blockchain from "./images/BC.png";
 import Title from "../Title";
 import Project from "./Project";
-
+import Devops from "./images/DEVOPS.png";
 function Projects(props) {
   return (
     <div
@@ -40,6 +42,7 @@ function Projects(props) {
             Description=" A real time social media app using Mern Stack, GraphQl and SocketIo"
             githubLink="https://github.com/ELMILYASS/Social-Media-App"
           />
+
           <Project
             img={Donationimg}
             Name="Donation Site"
@@ -50,12 +53,31 @@ function Projects(props) {
           "
           />
           <Project
+            Name="Digital Banking"
+            img={DigitalBanking}
+            Description=" A secure digital banking application developed using Angular, Spring, and JWT."
+            githubLink=" https://github.com/ELMILYASS/Digital-Banking-App
+          "
+          />
+          <Project
             img={Chatimg}
             Name="Chat App"
             Description="Real-time web chat application using PHP, JavaScript, CSS, AJAX,
           MySQL."
             githubLink="https://github.com/ELMILYASS/chatApp"
             siteLink="https://rapidchatapp.000webhostapp.com/"
+          />
+          <Project
+            img={Blockchain}
+            Name="Blockchain Simulator"
+            Description="A blockchain simulation project with Spring Boot on the server side and React on the client side, providing an interactive experience to understand the concepts and workings of blockchain."
+            githubLink="https://github.com/ELMILYASS/BlockchainProject.git"
+          />
+          <Project
+            img={Devops}
+            Name="Devops Project"
+            Description="A DevOps project using Docker, Kubernetes, CI/CD pipelines with GitHub Actions, GitOps with ArgoCD, and DevSecOps with various tools."
+            githubLink="https://github.com/ELMILYASS/DevopsProject.git"
           />
           {/* <Project
             img={Assignment}

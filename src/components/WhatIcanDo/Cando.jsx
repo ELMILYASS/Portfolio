@@ -309,18 +309,28 @@ function Cando(props) {
           </svg>
         </div>
         <div className="options">
-          <Domain
-            domain="Web Development"
-            details="I am a very passionate web developer, for the front-end I use HTML,CSS,JavaScript or React and for the back-end I use NodeJs, PHP or SpringBoot"
-          />
-          <Domain
-            domain="Web Design"
-            details="As a web designer, my approach is to prioritize simplicity, and I primarily utilize Figma for designing websites."
-          />
-          <Domain
-            domain="Software Engineering"
-            details="As a software engineer, I have a passion for all aspects of software development and enjoy using Java primarily to solve problems."
-          />
+          <div className="two">
+            <Domain
+              domain="Software Engineering"
+              details="
+              I am deeply passionate about every facet of software engineering. I immerse myself in mastering data structures and algorithms. My enthusiasm drives me to solve complex problems, with Java serving as my primary tool in crafting elegant solutions. "
+            />
+            <Domain
+              domain="Web Development"
+              details="As a passionate web developer, I specialize in using React or Angular for front-end development and Node.js, PHP, or Spring Boot for back-end development with enthusiasm. My dedication drives me to constantly explore new technologies and refine my skills."
+            />
+          </div>
+
+          <div className="two">
+            <Domain
+              domain="Blockchain"
+              details="Passionate about blockchain development, I adeptly craft smart contracts using Solidity and explore decentralized technologies like Hashgraph. My expertise extends to proficiently developing, deploying, and testing smart contracts and DApps."
+            />
+            <Domain
+              domain="Devops"
+              details="Passionate about DevOps, I thrive on using Docker, Kubernetes (K8s), and CI/CD pipelines to streamline development. Embracing GitOps principles, I prioritize security through DevSecOps practices to fortify applications against threats."
+            />
+          </div>
         </div>
       </div>
     </div>

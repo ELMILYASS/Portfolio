@@ -13,12 +13,37 @@ function Skills(props) {
       <div class="container">
         {" "}
         <div className="languages">
-          <Language name="JavaScript-TypeScript-NodeJs" percentage={80} />
-          <Language name="ReactJs-Angular" percentage={80} />
-          <Language name="CSS-TailwindCss" percentage={70} />
-          <Language name="JAVA-SpringBoot" percentage={70} />
-          <Language name="Python-Flask" percentage={70} />
-          <Language name="PHP" percentage={70} />
+          <Language
+            name="Backend Development"
+            tools="SpringBoot, PHP, NodeJs"
+            percentage={80}
+          />
+          <Language
+            name="Frontend Development"
+            tools="ReactJs, AngularCSS, CSS, Tailwind"
+            percentage={80}
+          />
+          <Language
+            name="Blockchain"
+            tools="ReactJs, AngularCSS, CSS, Tailwind"
+            percentage={70}
+          />
+
+          <Language
+            name="Devops"
+            tools="Docker, Kubernetes, CI/CD, GithubActions, ArgoCD, DevSecOps"
+            percentage={70}
+          />
+          <Language
+            name="Programming"
+            tools="JAVA, C++, JavaScript, TypeScript, Python"
+            percentage={70}
+          />
+          <Language
+            name="Machine Learning"
+            tools="TensorFlow, Scikit learn, XGboost"
+            percentage={60}
+          />
         </div>
         <div className="image ">
           <img className="img" src={img} alt="" />
